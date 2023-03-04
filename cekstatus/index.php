@@ -1,5 +1,5 @@
 <?php
-  require_once('database.php');
+  require_once('./database.php');
   $result = null;
 
   // Check if the form is submitted
@@ -25,50 +25,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Search Akta Cerai</title>
-  <style>
-    h1 {
-      text-align: center;
-      font-family: Arial, sans-serif;
-      font-size: 28px;
-      font-weight: bold;
-      color: #333;
-    }
-    body {
-      background-color: #f2f2f2;
-      font-family: Arial, sans-serif;
-    }
-    form {
-      margin: 50px auto;
-      padding: 20px;
-      background-color: #fff;
-      width: 500px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-    input[type="submit"] {
-      background-color: #4CAF50;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    input[type="submit"]:hover {
-      background-color: #45a049;
-    }
-    label {
-      display: inline-block;
-      width: 150px;
-      text-align: right;
-      margin-right: 20px;
-    }
-    input[type="text"] {
-      padding: 8px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-      width: 100%;
-    }  </style>
+  <link rel="stylesheet" href="cekstatus.css">
 </head>
 <body>
   <div style="text-align: center;">

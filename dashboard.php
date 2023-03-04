@@ -15,10 +15,10 @@
   <form method="post" action="save-data.php">
     <label for="date_input">Tanggal Pengambilan:</label>
     <input type="date" id="dateInput" name="dateInput" required>
-    
+
     <label for="name">No Perkara:</label>
     <input type="text" id="noperkara" name="noperkara" required>
-    
+
     <label for="name">Nama Penggugat:</label>
     <input type="text" id="namapenggugat" name="namapenggugat" required>
     

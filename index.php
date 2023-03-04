@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Login | Pengedilan Agama Ponorogo</title>
+    <title>Login | Pengadilan Agama Ponorogo</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>

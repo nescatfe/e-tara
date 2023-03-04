@@ -1,6 +1,6 @@
 <?php
   session_start(); // Start the session
-  require_once('database.php');
+  require_once('./database.php');
 
   // Check if user is not logged in, then redirect to login page
   if (!isset($_SESSION['username'])) {
@@ -12,75 +12,7 @@
 <html>
 <head>
   <title>Input Status Perkara</title>
-  <style>
-    body {
-      background-color: #81c784; /* set background color to green */
-      font-family: Arial, sans-serif;
-    }
-    h1 {
-      color: #fff; /* set text color to white */
-      text-align: center;
-      font-size: 40px;
-      margin-top: 50px;
-    }
-    form {
-      max-width: 500px;
-      margin: 0 auto;
-      background-color: #008000;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    }
-    label {
-      display: block;
-      margin-bottom: 10px;
-    }
-    input[type="text"], textarea {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      border-radius: 5px;
-      border: none;
-      margin-bottom: 20px;
-    }
-    input[type="submit"] {
-      background-color: #81c784;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    input[type="submit"]:hover {
-      background-color: #4caf50;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-    th, td {
-      padding: 10px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
-    th {
-      background-color: #81c784;
-      color: #fff;
-    }
-    tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
-    input[type="submit"][value="Delete"] {
-      background-color: #f44336;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-  </style>
+  <link rel="stylesheet" href="status.css">
 </head>
 <body>
   <h1>Input Status Perkara</h1>
