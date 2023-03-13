@@ -3,8 +3,6 @@
 e-TARA (Elektronik Akta Cerai) is a digital backup for divorce certificates. It enables efficient tracing and report generation for administrators and allows users to check their certificate status using their case number.
 
 ---
-
----
 Security
 1. untuk keamanan password, password diamankan (hashed) dengan menggunakan php password_hash() function 
 2. checks if the username is already taken before inserting it into the database.
@@ -23,7 +21,8 @@ Fungsi Aplikasi
 1. pengunjung dapat mengetahui status akta cerai sudah siap untuk diambil apa masih dalam proses
 
 #### SQL prompt for database
----
+
+```
 CREATE TABLE NAMADATABASE.users (
 	id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 	username VARCHAR(255) NOT NULL UNIQUE,
@@ -49,3 +48,4 @@ CREATE TABLE NAMADATABASE.statusperkara (
 	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 	statusperkara VARCHAR(255) NOT NULL
 )
+```
